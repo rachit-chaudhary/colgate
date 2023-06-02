@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://libs.zappar.com/zappar-aframe/2.0.0/zappar-aframe.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
+  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Colgate</title>
+    <style>
+      html,
+      body {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+      }
+     
+  </style>
+</head>
+<body>
+     <div id="mobilebiewonly">
+        <div id ="imgone" class='colgate'>
+            <div class="d-flex justify-content-start">
+              <img class='banner' src='/assets/colgatebanner.png' />
+            </div>
+            <div class='colgates'>
+              <!-- <img class='colbanner' src="/assets/BGimage.png" /> -->
+            </div>
+            <div class=" d-flex justify-content-center">
+              <button id="start" class='align-items-center experience' data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Start the Experience
+              </button>
+            </div>
+          </div>
+     </div>
+  
+  <!-- Modal -->
+
+  <div  class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content backgroundpopup ">
+        <div class="modal">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+          <button type="button"  class="btn btnclose" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class='d-flex justify-content-end'>
+          <button type="button" style="visibility: hidden;" id="scannerColgateclose" class="btn-close text-white btnclose px-4 py-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        </div>
+        <div class="modal-body justify-content-center">
+          <img class='popupcamera' src='/assets/colgatepopupbanner.gif' />
+          <div>
+          </div>
+          <div class=" justify-content-center">
+            <button id="scannerColgate" style="visibility: hidden;" type="button" class="btn next" data-bs-toggle="modal" data-bs-target="#staticBackdrops ">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+    <div id="gif" style=" display: none;">
+      <div>
+          <div id='mobilebiewonly'>
+              <div className=''>
+                  <div class="d-flex justify-content-start">
+                      <img className='banner' src='/assets/colgatebanner.png' />
+                  </div>
+                  <div className='d-flex justify-content-center'>
+                      <img src='/assets/scanner-bar-2--30fps--460px.gif' />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="largegif" style=" display: none;">
+    <div>
+        <div id='mobilebiewonly'>
+            <div className=''>
+               
+                <div className='d-flex justify-content-center'>
+                    <img src='/assets/bubble.gif' />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div id='mobilebiewonly'>
+    <div class='formouter formcover'>
+    <div class="d-flex justify-content-start">
+            <img class='banner' src='/assets/colgatebanner.png'/>
+        </div>
+    <div class='row userdetailed'>
+        <div class='col-12'>
+        <h1 class=' py-2 px-3'>Enter yours details</h1>
+        </div>
+    </div>
+    <div class='row userinfo'>
+        <div class='col-12'>
+        <form class=''>
+            <div class="form-group px-4  py-2">
+                <input type="text" class="form-control inputFormsBorderradius" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" />
+            </div>
+            <div class="form-group   px-4 py-2">
+                <input type="text" class="form-control inputFormsBorderradius " id="exampleInputPassword1" placeholder="Last Name" />
+            </div>
+            <div class="form-group  px-4 py-2">
+                <input type="email" class="form-control inputFormsBorderradius" id="exampleInputPassword1" placeholder="Email" />
+            </div>
+            <div class="form-group px-4  py-2">
+                <input type="number" class="form-control inputFormsBorderradius" id="exampleInputPassword1" placeholder="Mobile" />
+            </div>
+            <div class="form-check py-2 px-5">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">By signing up, I agree to receive smile worthy email/ messages 
+                from Colgate-Palmolive (I) Limited and/or its authorized agencies. 
+                We'll handle your information in accordance with our
+                 privacy policy. If you would like to, you can opt out at any time.</label>
+            </div>
+
+            
+          <div class='row '>
+            <div class='col-12'>
+            <div class=' d-flex justify-content-center'>
+                <button type="submit" class="btn expsubmit  ">Submit</button>
+
+            </div>
+            </div>
+          </div>
+        </form>
+        </div>
+    </div>
+    
+   
+     </div>
+</div> -->
+
+<a-scene >
+
+  <a-entity zappar-permissions-ui id="permissions"></a-entity>
+ 
+  <a-entity zappar-compatibility-ui id="compatibility"></a-entity>
+
+ <a-camera zappar-camera cursor="rayOrigin: mouse; fuse: false;" raycaster="objects: .collidable"></a-camera>
+ <a-entity
+ light="type: directional;
+    intensity: 1.5;
+    castShadow: true;
+    shadowMapHeight:2048;
+    shadowMapWidth:2048;
+    shadowCameraTop: 10;
+    target: #model;"
+ position="1 4.3 2.5"
+ shadow>
+</a-entity>
+<!-- <a-entity rotation="0 0 0"scale ="8.5 8.5 8.5" position="0 0 -30" id="model" gltf-model="url(assets/final8.glb)"  animation-mixer="clip: Animation; loop: repeat"> -->
+
+<a-light type="ambient" intensity="1"></a-light>
+ <a-entity zappar-image="target:assets/ColagateImageTarget.zpt">
+   <a-entity rotation="0 0 0"scale ="8.5 8.5 8.5" id="model" gltf-model="url(assets/final10.glb)"  animation-mixer="clip: Animation; loop: repeat">
+
+   </a-entity>  
+   
+ </a-entity> 
+</a-scene> 
+
+<!-- <a-entity geometry="primitive:plane;" width=".3" height=".3" position ="0 0 -3" material="shader:flat;src:url(assets/final.png);opacity:.8"  ></a-entity> -->
+
+  <!-- <a-entity zappar-image="target:assets/Colagate Image Target.zpt">
+   <a-entity rotation="0 0 0"scale ="8.5 8.5 8.5" id="model" gltf-model="url(assets/final8.glb)"  animation-mixer="clip: Animation; loop: repeat">
+
+   </a-entity>  
+   
+ </a-entity>  -->
+ 
+     
+     <!-- <a-entity zappar-face> 
+       
+
+         <a-entity geometry="primitive:plane;" width=".3" height=".3" position ="0 0 0"  material="shader:flat;src:url(assets/final.png);color:green;opacity:.8"  ></a-entity>
+     
+     </a-entity> -->
+
+<script>
+  const gifi = document.getElementById("gif")
+  const screenone = document.getElementById("imgone")
+  const startExpre = document.getElementById("start")
+  const startexp = document.getElementById("scannerColgate")
+  const maindiv = document.getElementById("mobilebiewonly");
+  const teethvideo = document.getElementById("largegif");
+  startexp.onclick = () =>{
+     maindiv.style.display="none"
+     gifi.style.display="block"
+     setTimeout(function(){gifi.style.display="none" }, 3000);
+     setTimeout(function(){teethvideo.style.display="block" }, 11000);
+     setTimeout(function(){teethvideo.style.display="none" }, 19000);
+  }
+  startExpre.onclick = () => {
+    screenone.style.display="none"
+  }
+  function nextPopUp(){
+    document.getElementById("scannerColgate").style.visibility="visible";
+    document.getElementById("scannerColgateclose").style.visibility="visible";
+
+  }
+  setTimeout('nextPopUp()',6800)
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+
+</body>
+</html>
